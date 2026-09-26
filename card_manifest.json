@@ -1,0 +1,67 @@
+{
+  "project": {
+    "name": "Custom EDOPro Expansion",
+    "version": "0.1.0",
+    "created": "2026-09-19T16:50:00+02:00",
+    "updated": "2026-09-26T17:24:00+02:00",
+    "target_platform": "Project Ignis: EDOPro",
+    "distribution": "GitHub repository (EDOPro repo sync)",
+    "repository": "https://github.com/Dragapult590/Custom-YuGiOh-Cards",
+    "database_file": "custom-cards.cdb",
+    "id_strategy": {
+      "description": "9-digit IDs starting at 100000001 to avoid collisions with official cards (which use 8-digit passcodes)",
+      "range_start": 100000001,
+      "next_available_id": 100000001
+    },
+    "setcode_strategy": {
+      "description": "Custom archetypes use setcodes starting at 0xF00 to avoid collisions with official archetypes",
+      "range_start": "0xF00",
+      "assignments": {}
+    },
+    "source_verification": {
+      "database_schema_source": "ProjectIgnis/BabelCDB verified via web research 2026-09-19",
+      "scripting_conventions_source": "ProjectIgnis/CardScripts utility.lua verified via web research 2026-09-19",
+      "type_constants_source": "EDOPro constant.lua verified via web search 2026-09-19",
+      "expansion_structure_source": "EDOPro documentation and community sources verified 2026-09-19",
+      "repository_config_source": "EDOPro user_configs.json mechanism verified via web research 2026-09-26"
+    },
+    "validation_capabilities": {
+      "sqlite_validation": true,
+      "lua_syntax_validation": false,
+      "api_verification": "partial (web-based source inspection)",
+      "runtime_testing": false
+    },
+    "expansion_structure": {
+      "description": "GitHub repository synced by EDOPro. CDB at root, scripts in script/, pics in pics/, strings.conf at root.",
+      "cdb_location": "custom-cards.cdb",
+      "scripts_location": "script/",
+      "pics_location": "pics/",
+      "strings_location": "strings.conf"
+    },
+    "edopro_config": {
+      "url": "https://github.com/Dragapult590/Custom-YuGiOh-Cards",
+      "repo_name": "Custom-YuGiOh-Cards",
+      "repo_path": "./repositories/Custom-YuGiOh-Cards",
+      "should_update": true,
+      "should_read": true
+    }
+  },
+  "cards": [],
+  "files": [
+    "custom-cards.cdb",
+    "script/",
+    "pics/",
+    "strings.conf",
+    "card_manifest.json",
+    "card_definitions.json",
+    "build.py",
+    "README.md",
+    ".gitignore"
+  ],
+  "known_limitations": [
+    "EDOPro runtime testing unavailable - cards have not been tested in the actual game engine",
+    "Lua syntax validation unavailable locally (no Lua interpreter installed)",
+    "API verification limited to web-based source inspection of ProjectIgnis repositories"
+  ],
+  "unresolved_issues": []
+}

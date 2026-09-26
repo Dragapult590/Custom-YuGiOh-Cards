@@ -1,0 +1,15 @@
+# Build artifacts
+*.zip
+__pycache__/
+*.pyc
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+
+# MinGit tools (not part of the project)
